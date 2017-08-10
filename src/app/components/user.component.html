@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let hobby of hobbies; let i = index">{{hobby}}&nbsp;<button (click)="deleteHobby(i)">X</button></li>
   </ul>
-  <form (submit)="addHobby(hobby)">
+  <form (submit)="addHobby(hobby.value)">
 	  Name: <input type="text" #hobby />
 	</form>
 	<hr />

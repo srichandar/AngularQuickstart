@@ -20,12 +20,11 @@ constructor(private postService: PostService) {
 	});
 }
 
-addHobby(hobby) {
-	this.hobbies.push(hobby.value);
-	hobby.value = '';
+addHobby(hobby: string) {
+	this.hobbies.push(hobby);
 }
 
-deleteHobby(index) {
+deleteHobby(index: number) {
 	this.hobbies.splice(index, 1);
 }
 
